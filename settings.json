@@ -1,5 +1,5 @@
 {
-    "php.validate.executablePath": "/opt/lampp/bin/php",
+    "php.validate.executablePath": "/usr/bin/php",
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
@@ -13,16 +13,14 @@
         "<C-x>": false,
         "<C-v>": false,
         "<C-y>": false,
-        "<C-w>": false
+        "<C-w>": false,
+        "<C-d>": false
     },
 
     "editor.mouseWheelZoom": true,
     "editor.wordWrap": "on",
     "editor.fontLigatures": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "bracket-pair-colorizer-2.depreciation-notice": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -34,18 +32,22 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
+        "editor.tabSize": 2
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
+        "editor.tabSize": 2
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
+        "editor.tabSize": 2
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
+        "editor.tabSize": 2
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -58,8 +60,35 @@
     "terminal.integrated.fontSize": 17,
     "editor.renderWhitespace": "none",
     "diffEditor.wordWrap": "on",
+    "prettier.tabWidth": 2,
+    "editor.guides.bracketPairs": "active",
+    "files.watcherExclude": {
+        "*/.git/objects/*": true,
+        "*/node_modules/*": true
+    },
+    "tailwindCSS.includeLanguages": {
+        "typescript": "javascript",
+        "typescriptreact": "javascript"  
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "tailwindCSS.experimental.classRegex": [
+        "tw`([^`]*)", 
+        "tw\\.[^`]+`([^`]*)`", 
+        "tw\\(.?\\).?`([^`]*)" 
+    ],
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.formatOnSave": true
+    },
+    "editor.fontFamily": "'Menlo', 'Fira Code iScript', 'Noto Mono', 'Droid Sans Mono'",
+    "workbench.iconTheme": "material-icon-theme",
     "editor.fontSize": 19,
-    "editor.fontFamily": "'Menlo', 'Monospace'",
-    "window.zoomLevel": 1,
-    "prettier.tabWidth": 4,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorCustomizations": {
+        "[Flate]": {
+            "editor.lineHighlightBackground": "#000000"
+        }
+    },
 }
