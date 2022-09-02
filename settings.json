@@ -6,7 +6,6 @@
             "after": ["<esc>"]
         }
     ],
-
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-c>": false,
@@ -16,7 +15,6 @@
         "<C-w>": false,
         "<C-d>": false
     },
-
     "editor.mouseWheelZoom": true,
     "editor.wordWrap": "on",
     "editor.fontLigatures": true,
@@ -47,7 +45,7 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -82,13 +80,24 @@
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
         "editor.formatOnSave": true
     },
-    "editor.fontFamily": "'Menlo', 'Fira Code iScript', 'Noto Mono', 'Droid Sans Mono'",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontSize": 19,
+    "editor.fontFamily": "'Iosevka', 'IBM Plex Mono', 'Hack', 'Ubuntu Mono', 'Noto Mono', 'Cascadia Code', 'Menlo', 'Operator Mono', 'Fira Code', 'Fira Code iScript', 'Dank Mono', 'Monolisa', 'Monospace', 'JetBrains Mono'",
     "window.menuBarVisibility": "toggle",
     "workbench.colorCustomizations": {
         "[Flate]": {
-            "editor.lineHighlightBackground": "#000000"
-        }
+            "editor.lineHighlightBackground": "#000000",
+            "editorIndentGuide.background": "#2b2b2b"
+        },
     },
+
+    "editor.smoothScrolling": true,
+    "editor.fontSize": 21, // For normal use case
+    // "editor.fontSize": 25, // For iosevka font 
+    // "editor.fontSize": 30, // For ubuntu mono
+    "editor.lineHeight": 35, // For normal use case
+    // "editor.lineHeight": 40, // For iosevka font 
+    // "editor.lineHeight": 43, // For ubuntu mono font
+    "vim.smartRelativeLine": true,
+    "terminal.integrated.showExitAlert": false,
+    "workbench.iconTheme": "material-icon-theme",
 }
+
