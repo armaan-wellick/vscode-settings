@@ -30,7 +30,7 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -55,6 +55,13 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
     },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.formatOnSave": true,
+        // "editor.fontFamily": "'Iosevka'",
+        // "editor.fontSize": 25,
+        // "editor.lineHeight": 40
+    },
     "terminal.integrated.fontSize": 17,
     "editor.renderWhitespace": "none",
     "diffEditor.wordWrap": "on",
@@ -76,11 +83,7 @@
         "tw\\.[^`]+`([^`]*)`", 
         "tw\\(.?\\).?`([^`]*)" 
     ],
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-        "editor.formatOnSave": true
-    },
-    "editor.fontFamily": "'Iosevka', 'IBM Plex Mono', 'Hack', 'Ubuntu Mono', 'Noto Mono', 'Cascadia Code', 'Menlo', 'Operator Mono', 'Fira Code', 'Fira Code iScript', 'Dank Mono', 'Monolisa', 'Monospace', 'JetBrains Mono'",
+    "editor.fontFamily": "'Menlo', 'Fira Code iScript', 'Monolisa', 'Cascadia Code', 'Hack', 'Roboto Mono', 'Noto Mono', 'IBM Plex Mono', 'Operator Mono', 'Fira Code', 'Iosevka', 'Fira Code', 'JetBrains Mono', 'Ubuntu Mono', 'Dank Mono', 'Monospace'",
     "window.menuBarVisibility": "toggle",
     "workbench.colorCustomizations": {
         "[Flate]": {
@@ -90,14 +93,19 @@
     },
 
     "editor.smoothScrolling": true,
-    "editor.fontSize": 21, // For normal use case
-    // "editor.fontSize": 25, // For iosevka font 
+    "editor.fontSize": 19, // For normal use case
+    // "editor.fontSize": 23, // For cascadia code, fira code & operator mono
+    // "editor.fontSize": 25, // For iosevka
     // "editor.fontSize": 30, // For ubuntu mono
-    "editor.lineHeight": 35, // For normal use case
-    // "editor.lineHeight": 40, // For iosevka font 
-    // "editor.lineHeight": 43, // For ubuntu mono font
+    // "editor.lineHeight": 35, // For normal use case
+    // "editor.lineHeight": 40, // For iosevka 
+    // "editor.lineHeight": 43, // For ubuntu mono 
     "vim.smartRelativeLine": true,
     "terminal.integrated.showExitAlert": false,
     "workbench.iconTheme": "material-icon-theme",
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.cursorStyle": "block",
+    "editor.cursorSmoothCaretAnimation": true,
+    "terminal.integrated.fontFamily": "'Menlo'"
 }
 
