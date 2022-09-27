@@ -62,6 +62,10 @@
         // "editor.fontSize": 25,
         // "editor.lineHeight": 40
     },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
     "terminal.integrated.fontSize": 17,
     "editor.renderWhitespace": "none",
     "diffEditor.wordWrap": "on",
@@ -83,7 +87,7 @@
         "tw\\.[^`]+`([^`]*)`", 
         "tw\\(.?\\).?`([^`]*)" 
     ],
-    "editor.fontFamily": "'Menlo', 'Fira Code iScript', 'Monolisa', 'Cascadia Code', 'Hack', 'Roboto Mono', 'Noto Mono', 'IBM Plex Mono', 'Operator Mono', 'Fira Code', 'Iosevka', 'Fira Code', 'JetBrains Mono', 'Ubuntu Mono', 'Dank Mono', 'Monospace'",
+    "editor.fontFamily": "'Code New Roman', 'JetBrains Mono', 'Monospace', 'Fira Code', 'SF Mono', 'Menlo', 'Roboto Mono', 'Noto Mono', 'Iosevka', 'Cascadia Code', 'Fira Code iScript', 'Dank Mono', 'Monolisa', 'Hack', 'IBM Plex Mono', 'Operator Mono', 'Fira Code', 'Ubuntu Mono'",
     "window.menuBarVisibility": "toggle",
     "workbench.colorCustomizations": {
         "[Flate]": {
@@ -91,8 +95,6 @@
             "editorIndentGuide.background": "#2b2b2b"
         },
     },
-
-    "editor.smoothScrolling": true,
     "editor.fontSize": 19, // For normal use case
     // "editor.fontSize": 23, // For cascadia code, fira code & operator mono
     // "editor.fontSize": 25, // For iosevka
@@ -104,8 +106,6 @@
     "terminal.integrated.showExitAlert": false,
     "workbench.iconTheme": "material-icon-theme",
     "vsicons.dontShowNewVersionMessage": true,
-    "editor.cursorStyle": "block",
-    "editor.cursorSmoothCaretAnimation": true,
-    "terminal.integrated.fontFamily": "'Menlo'"
+    "editor.smoothScrolling": true,
+    "workbench.colorTheme": "Night Wolf (dark gray)",
 }
-
