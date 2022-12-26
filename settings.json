@@ -8,6 +8,7 @@
     ],
     "vim.handleKeys": {
         "<C-a>": false,
+        "<C-b>": false,
         "<C-c>": false,
         "<C-x>": false,
         "<C-v>": false,
@@ -17,7 +18,7 @@
     },
     "editor.mouseWheelZoom": true,
     "editor.wordWrap": "on",
-    "editor.fontLigatures": true,
+    // "editor.fontLigatures": true,
     "editor.suggestSelection": "first",
     "files.exclude": {
         "**/.classpath": true,
@@ -66,6 +67,14 @@
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.formatOnSave": true
     },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+        "editor.formatOnSave": true
+    },
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter", 
+        "editor.formatOnSave": true
+    },
     "terminal.integrated.fontSize": 17,
     "editor.renderWhitespace": "none",
     "diffEditor.wordWrap": "on",
@@ -87,25 +96,48 @@
         "tw\\.[^`]+`([^`]*)`", 
         "tw\\(.?\\).?`([^`]*)" 
     ],
-    "editor.fontFamily": "'Code New Roman', 'JetBrains Mono', 'Monospace', 'Fira Code', 'SF Mono', 'Menlo', 'Roboto Mono', 'Noto Mono', 'Iosevka', 'Cascadia Code', 'Fira Code iScript', 'Dank Mono', 'Monolisa', 'Hack', 'IBM Plex Mono', 'Operator Mono', 'Fira Code', 'Ubuntu Mono'",
-    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'Ubuntu Mono', 'Code New Roman', 'Menlo', 'Fira Code', 'Hack', 'Cascadia Code', 'Monolisa', 'IBM Plex Mono', 'Iosevka', 'JetBrains Mono', 'Monospace', 'Courier', 'Courier New', 'TempleOS', 'Noto Mono', 'Operator Mono', 'SF Mono', 'Roboto Mono', 'Fira Code iScript', 'Dank Mono'",
     "workbench.colorCustomizations": {
         "[Flate]": {
             "editor.lineHighlightBackground": "#000000",
             "editorIndentGuide.background": "#2b2b2b"
         },
+        "[Ayu One Dark]": {
+            "tab.activeForeground": "#fff",
+            "tab.activeBackground": "#4e46e585",
+            "activityBar.foreground": "#fff",
+        },
+        "[Noctilux]": {
+            "editor.background": "#131313",
+        },
+        "[Black]": {
+            "editor.lineHighlightBackground": "#141414",
+            "editorIndentGuide.background": "#2b2b2b"
+        },
+        "[Dracula]": {
+        "editorCursor.foreground": "#ffff00"
+        }
+        // "editorCursor.foreground": "#00ff00",
+        // "editorCursor.background": "#000",
     },
-    "editor.fontSize": 19, // For normal use case
-    // "editor.fontSize": 23, // For cascadia code, fira code & operator mono
+    // "editor.fontSize": 16, // For TempleOS font
+    // "editor.fontSize": 17.5, // For monolisa, menlo(depends)
+    // "editor.fontSize": 19, // For normal use case
+    // "editor.fontSize": 21, // For Fira Code (depends) and menlo (depends)
+    // "editor.fontSize": 23, // For cascadia code, fira code, jet brains mono, operator mono, menlo (depends), hack(depends), ubuntu mono (depends)
     // "editor.fontSize": 25, // For iosevka
-    // "editor.fontSize": 30, // For ubuntu mono
+    // "editor.fontSize": 27, // For code new roman
+    "editor.fontSize": 30, // For ubuntu mono
     // "editor.lineHeight": 35, // For normal use case
     // "editor.lineHeight": 40, // For iosevka 
     // "editor.lineHeight": 43, // For ubuntu mono 
     "vim.smartRelativeLine": true,
     "terminal.integrated.showExitAlert": false,
-    "workbench.iconTheme": "material-icon-theme",
     "vsicons.dontShowNewVersionMessage": true,
     "editor.smoothScrolling": true,
-    "workbench.colorTheme": "Night Wolf (dark gray)",
+    "glassit.alpha": 255,
+    "rapidapi.terminalLink.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.cursorStyle": "block",
+    "workbench.colorTheme": "Mariana",
 }
