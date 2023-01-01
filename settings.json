@@ -1,6 +1,5 @@
 {
-    "php.validate.executablePath": "/usr/bin/php",
-    "vim.insertModeKeyBindings": [
+    "php.validate.executablePath": "/usr/bin/php", "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
             "after": ["<esc>"]
@@ -31,22 +30,22 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 2,
+        // "editor.tabSize": 2,
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 2
+        // "editor.tabSize": 2
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 2
+        // "editor.tabSize": 4
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,
-        "editor.tabSize": 2,
+        // "editor.tabSize": 4,
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -78,7 +77,7 @@
     "terminal.integrated.fontSize": 17,
     "editor.renderWhitespace": "none",
     "diffEditor.wordWrap": "on",
-    "prettier.tabWidth": 2,
+    "prettier.tabWidth": 4,
     "editor.guides.bracketPairs": "active",
     "files.watcherExclude": {
         "*/.git/objects/*": true,
@@ -96,7 +95,7 @@
         "tw\\.[^`]+`([^`]*)`", 
         "tw\\(.?\\).?`([^`]*)" 
     ],
-    "editor.fontFamily": "'Ubuntu Mono', 'Code New Roman', 'Menlo', 'Fira Code', 'Hack', 'Cascadia Code', 'Monolisa', 'IBM Plex Mono', 'Iosevka', 'JetBrains Mono', 'Monospace', 'Courier', 'Courier New', 'TempleOS', 'Noto Mono', 'Operator Mono', 'SF Mono', 'Roboto Mono', 'Fira Code iScript', 'Dank Mono'",
+    "editor.fontFamily": "'Iosevka', 'Menlo', 'Ubuntu Mono', 'Victor Mono', 'Noto Sans Mono', 'Code New Roman', 'Fira Code', 'Hack', 'Cascadia Code', 'Monolisa', 'IBM Plex Mono', 'JetBrains Mono', 'Monospace', 'Courier', 'Courier New', 'TempleOS', 'Operator Mono', 'SF Mono', 'Roboto Mono', 'Fira Code iScript', 'Dank Mono'",
     "workbench.colorCustomizations": {
         "[Flate]": {
             "editor.lineHighlightBackground": "#000000",
@@ -125,9 +124,9 @@
     // "editor.fontSize": 19, // For normal use case
     // "editor.fontSize": 21, // For Fira Code (depends) and menlo (depends)
     // "editor.fontSize": 23, // For cascadia code, fira code, jet brains mono, operator mono, menlo (depends), hack(depends), ubuntu mono (depends)
-    // "editor.fontSize": 25, // For iosevka
-    // "editor.fontSize": 27, // For code new roman
-    "editor.fontSize": 30, // For ubuntu mono
+    // "editor.fontSize": 25, // For iosevka (depends), noto mono, noto sans mono, victor mono
+    // "editor.fontSize": 27, // For code new roman, iosevka (depends)
+    "editor.fontSize": 30, // For ubuntu mono, iosevka (depends)
     // "editor.lineHeight": 35, // For normal use case
     // "editor.lineHeight": 40, // For iosevka 
     // "editor.lineHeight": 43, // For ubuntu mono 
@@ -139,5 +138,5 @@
     "rapidapi.terminalLink.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
     "editor.cursorStyle": "block",
-    "workbench.colorTheme": "Mariana",
+    "workbench.colorTheme": "Gruber (Almost) Dark",
 }
