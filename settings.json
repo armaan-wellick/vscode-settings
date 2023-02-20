@@ -1,24 +1,25 @@
 {
     "php.validate.executablePath": "/usr/bin/php",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "k"],
-            "after": ["<esc>"]
-        }
-    ],
+    // "vim.insertModeKeyBindings": [
+    //     {
+    //         "before": ["j", "k"],
+    //         "after": ["<esc>"]
+    //     }
+    // ],
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-b>": false,
         "<C-c>": false,
         "<C-x>": false,
-        "<C-v>": false,
         "<C-y>": false,
         "<C-w>": false,
-        "<C-d>": false
+        "<C-d>": false,
+        "<C-f>": false,
+        "<C-n>": false
     },
     "editor.mouseWheelZoom": true,
-    "editor.wordWrap": "on",
-    // "editor.fontLigatures": true,
+    // "editor.wordWrap": "on",
+    "editor.fontLigatures": true,
     "editor.suggestSelection": "first",
     "files.exclude": {
         "**/.classpath": true,
@@ -30,35 +31,31 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
         // "editor.tabSize": 2,
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
         // "editor.tabSize": 2
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
         // "editor.tabSize": 4
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
         // "editor.tabSize": 4,
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
     },
     "[php]": {
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": true
         // "editor.fontFamily": "'Iosevka'",
         // "editor.fontSize": 25,
         // "editor.lineHeight": 40
@@ -71,8 +68,16 @@
         "editor.defaultFormatter": "redhat.java",
         "editor.formatOnSave": true
     },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
     "[blade]": {
-        "editor.defaultFormatter": "shufo.vscode-blade-formatter", 
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
         "editor.formatOnSave": true
     },
     "terminal.integrated.fontSize": 17,
@@ -86,17 +91,17 @@
     },
     "tailwindCSS.includeLanguages": {
         "typescript": "javascript",
-        "typescriptreact": "javascript"  
+        "typescriptreact": "javascript"
     },
     "editor.quickSuggestions": {
         "strings": true
     },
     "tailwindCSS.experimental.classRegex": [
-        "tw`([^`]*)", 
-        "tw\\.[^`]+`([^`]*)`", 
-        "tw\\(.?\\).?`([^`]*)" 
+        "tw`([^`]*)",
+        "tw\\.[^`]+`([^`]*)`",
+        "tw\\(.?\\).?`([^`]*)"
     ],
-    "editor.fontFamily": "'Iosevka', 'Menlo', 'Ubuntu Mono', 'Victor Mono', 'Noto Sans Mono', 'Code New Roman', 'Fira Code', 'Hack', 'Cascadia Code', 'Monolisa', 'IBM Plex Mono', 'JetBrains Mono', 'Monospace', 'Courier', 'Courier New', 'TempleOS', 'Operator Mono', 'SF Mono', 'Roboto Mono', 'Fira Code iScript', 'Dank Mono'",
+    "editor.fontFamily": "'Menlo', 'Monolisa', 'Iosevka', 'Operator Mono', 'Fira Code', 'JetBrains Mono', 'Ubuntu Mono', 'Victor Mono', 'Noto Sans Mono', 'Code New Roman', 'Hack', 'Cascadia Code', 'IBM Plex Mono', 'Monospace', 'Courier', 'Courier New', 'TempleOS', 'SF Mono', 'Roboto Mono', 'Fira Code iScript', 'Dank Mono'",
     "workbench.colorCustomizations": {
         "[Flate]": {
             "editor.lineHighlightBackground": "#000000",
@@ -105,17 +110,17 @@
         "[Ayu One Dark]": {
             "tab.activeForeground": "#fff",
             "tab.activeBackground": "#4e46e585",
-            "activityBar.foreground": "#fff",
+            "activityBar.foreground": "#fff"
         },
         "[Noctilux]": {
-            "editor.background": "#131313",
+            "editor.background": "#131313"
         },
         "[Black]": {
             "editor.lineHighlightBackground": "#141414",
             "editorIndentGuide.background": "#2b2b2b"
         },
         "[Dracula]": {
-        "editorCursor.foreground": "#ffff00"
+            "editorCursor.foreground": "#ffff00"
         }
         // "editorCursor.foreground": "#00ff00",
         // "editorCursor.background": "#000",
@@ -124,20 +129,20 @@
     // "editor.fontSize": 17.5, // For monolisa, menlo(depends)
     // "editor.fontSize": 19, // For normal use case
     // "editor.fontSize": 21, // For Fira Code (depends) and menlo (depends)
-    // "editor.fontSize": 23, // For cascadia code, fira code, jet brains mono, operator mono, menlo (depends), hack(depends), ubuntu mono (depends)
+    // "editor.fontSize": 23, // For cascadia code, fira code, jet brains mono, operator mono, menlo (depends), hack(depends), ubuntu mono (depends), monolisa (depends)
     // "editor.fontSize": 25, // For iosevka (depends), noto mono, noto sans mono, victor mono
-    // "editor.fontSize": 27, // For code new roman, iosevka (depends)
-    "editor.fontSize": 30, // For ubuntu mono, iosevka (depends)
+    "editor.fontSize": 27, // For code new roman, iosevka (depends), menlo (depends), fira code (depends)
+    // "editor.fontSize": 30, // For ubuntu mono, iosevka (depends)
     // "editor.lineHeight": 35, // For normal use case
-    // "editor.lineHeight": 40, // For iosevka 
-    // "editor.lineHeight": 43, // For ubuntu mono 
+    // "editor.lineHeight": 40, // For iosevka
+    // "editor.lineHeight": 43, // For ubuntu mono
     "vim.smartRelativeLine": true,
     "terminal.integrated.showExitAlert": false,
     "vsicons.dontShowNewVersionMessage": true,
     "editor.smoothScrolling": true,
-    "glassit.alpha": 255,
     "rapidapi.terminalLink.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
     "editor.cursorStyle": "block",
-    "workbench.colorTheme": "Gruber (Almost) Dark",
+    "keyboard.dispatch": "keyCode",
+    "editor.bracketPairColorization.enabled": false
 }
